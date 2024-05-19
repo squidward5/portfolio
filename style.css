@@ -4,7 +4,7 @@ body {
   width: 100%;
   margin: 0;
 
-  background-image: url("background.gif");
+  background-image: url("background.png");
   background-size: cover;
 
   display: flex;
