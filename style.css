@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  background-image: url("background.gif");
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rounded-rectangle {
+  width: 30%;
+  height: 40%;
+  margin: 0 auto;
+
+  border-radius: 35px;
+  background-color: rgba(20, 39, 58, 0.75);
+  backdrop-filter: blur(10px);
+
+  border: 2px solid white;
+
+  animation: smooth-open 0.5s ease-out;
+}
+
+@keyframes smooth-open {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  font-size: 25px;
+  color: white;
+}
+
+#header2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  position: absolute;
+  top: 58%;
+  left: 45%;
+  font-size: 16px;
+  color: white;
+  transform: translateX(-25%);
+}
+
+#rounded-image {
+  position: absolute;
+  top: 5px;
+  left: 60%;
+
+  border-radius: 500px;
+  width: 150px;
+  transform: translateX(-92%);
+}
+
+#logo1 {
+  width: 70px;
+  cursor: pointer;
+  left: 36%;
+  position: absolute;
+  top: 275px;
+  right: 0px;
+  transition: transform 0.3s ease;
+}
+
+#logo1:hover {
+  transform: scale(1.1);
+}
+
+#logo2 {
+  width: 70px;
+  cursor: pointer;
+  left: 52%;
+  position: absolute;
+  top: 275px;
+  right: 0px;
+  transition: transform 0.3s ease;
+}
+
+#logo2:hover {
+  transform: scale(1.1);
+}
+
+audio {
+  display: none;
+}
